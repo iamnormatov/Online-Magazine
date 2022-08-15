@@ -1,0 +1,89 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <%= link_to "Home", root_path, class:'nav-link'%>
+        </li>
+      </ul>
+    </div>
+
+    <div id="nav">
+      <ul>
+        <li><a class="anav" href="#">Catalog</a>
+          <ul>
+             <% @categoriys.each do |categorys| %>
+             <li><%= categorys.name %>
+          <ul>
+              <% categorys.categoryers.each do |category| %>
+              <li><a class="anav" href="#"><%=link_to category.name, category, class: "anav" %></a>
+        </li>
+              <% end %>
+          </ul>
+                </li>
+
+                  <% end %>
+
+              </ul>
+          </li>
+          </ul>
+    </div>
+
+  </div>
+</nav>
+
+    <style>
+#nav {
+    width: 1234px;
+    height: 40px;
+    background-color: #eee;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    float: left;
+    position: relative;
+}
+.anav {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+}
+.anav:hover {
+    color: #fff;
+    background: #666;
+}
+ul li ul {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    display: none;
+}
+ul li:hover>ul {
+    display: block;
+}
+ul li ul li {
+    float : none;
+    background: #eee;
+    margin-top: 2px;
+}
+ul li ul li ul {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    display: none;
+}
+    </style>
+

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @categoriy %>
+
+<div>
+  <%= link_to "Edit this categoriy", edit_categoriy_path(@categoriy) %> |
+  <%= link_to "Back to categoriys", categoriys_path %>
+
+  <%= button_to "Destroy this categoriy", @categoriy, method: :delete %>
+</div>

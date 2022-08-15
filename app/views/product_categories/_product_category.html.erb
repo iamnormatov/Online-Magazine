@@ -1,0 +1,13 @@
+<div id="<%= dom_id product_category %>">
+  <p>
+    <strong>Category:</strong>
+    <%= product_category.name %>
+  </p>
+
+</div>
+<% @products.each do |product| %>
+<% if product_category.name == product.product_category.name %>
+  <%= link_to product.name, product%>
+
+<% end %>
+<% end %>

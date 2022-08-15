@@ -1,0 +1,32 @@
+<div id="<%= dom_id product %>">
+
+
+
+
+<div class="container mt-5 mb-3">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"> <i class="bx bxl-dribbble"></i> </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0"><%= product.name %></h6> 
+                        </div>
+                    </div>
+                    <div class="badge"> <span>Product</span> </div>
+                </div>
+                <div class="mt-5">
+                    <h6 class="heading"><%= product.description %></h6>
+                    <div class="mt-5">
+                        <div class="mt-3"> <span class="text1"><%= product.price %></span> </div>
+                    </div>
+                <%= link_to product.product_category.categoryer.categoriy.name, product.product_category.categoryer.categoriy %>><%= link_to product.product_category.categoryer.name,product.product_category.categoryer %>><%= link_to product.product_category.name, product.product_category, class: "ashow" %>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
