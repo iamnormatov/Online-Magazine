@@ -13,7 +13,7 @@ class ProductsTest < ApplicationSystemTestCase
   test "should create product" do
     visit products_url
     click_on "New product"
-
+ 
     fill_in "Description", with: @product.description
     fill_in "Name", with: @product.name
     fill_in "Price", with: @product.price
