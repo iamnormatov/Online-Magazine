@@ -13,7 +13,7 @@ class CategoryersTest < ApplicationSystemTestCase
   test "should create categoryer" do
     visit categoryers_url
     click_on "New categoryer"
-
+ 
     fill_in "Name", with: @categoryer.name
     click_on "Create Categoryer"
 
