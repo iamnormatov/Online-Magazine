@@ -5,7 +5,7 @@ class CategoriysController < ApplicationController
   def index
     @categoriys = Categoriy.all
   end
-
+ 
   # GET /categoriys/1 or /categoriys/1.json
   def show
   end
