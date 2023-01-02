@@ -7,7 +7,7 @@ class CategoryersController < ApplicationController
     @categoriys = Categoriy.all
 
   end
-
+ 
   # GET /categoryers/1 or /categoryers/1.json
   def show
     @categoriys = Categoriy.all
