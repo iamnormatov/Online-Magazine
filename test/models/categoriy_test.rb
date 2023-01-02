@@ -5,3 +5,4 @@ class CategoriyTest < ActiveSupport::TestCase
   #   assert true
   # end
 end
+ 
