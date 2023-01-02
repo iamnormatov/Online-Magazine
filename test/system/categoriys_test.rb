@@ -13,7 +13,7 @@ class CategoriysTest < ApplicationSystemTestCase
   test "should create categoriy" do
     visit categoriys_url
     click_on "New categoriy"
-
+ 
     fill_in "Name", with: @categoriy.name
     click_on "Create Categoriy"
 
