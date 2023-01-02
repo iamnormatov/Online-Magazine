@@ -14,7 +14,7 @@ class ProductCategoriesControllerTest < ActionDispatch::IntegrationTest
     get new_product_category_url
     assert_response :success
   end
-
+ 
   test "should create product_category" do
     assert_difference("ProductCategory.count") do
       post product_categories_url, params: { product_category: { categoryer_id: @product_category.categoryer_id, name: @product_category.name } }
