@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
     @products = Product.all
     @categoriys = Categoriy.all
   end
-
+ 
   # GET /products/1 or /products/1.json
   def show
     @categoriys = Categoriy.all
