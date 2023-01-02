@@ -5,3 +5,4 @@ class CategoryerTest < ActiveSupport::TestCase
   #   assert true
   # end
 end
+ 
