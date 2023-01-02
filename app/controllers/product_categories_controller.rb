@@ -8,7 +8,7 @@ class ProductCategoriesController < ApplicationController
     @categoriys = Categoriy.all
 
   end
-
+ 
   # GET /product_categories/1 or /product_categories/1.json
   def show
     @products = Product.all
