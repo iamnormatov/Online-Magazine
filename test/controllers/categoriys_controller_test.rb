@@ -14,7 +14,7 @@ class CategoriysControllerTest < ActionDispatch::IntegrationTest
     get new_categoriy_url
     assert_response :success
   end
-
+ 
   test "should create categoriy" do
     assert_difference("Categoriy.count") do
       post categoriys_url, params: { categoriy: { name: @categoriy.name } }
