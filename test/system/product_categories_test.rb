@@ -13,7 +13,7 @@ class ProductCategoriesTest < ApplicationSystemTestCase
   test "should create product category" do
     visit product_categories_url
     click_on "New product category"
-
+ 
     fill_in "Categoryer", with: @product_category.categoryer_id
     fill_in "Name", with: @product_category.name
     click_on "Create Product category"
